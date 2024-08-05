@@ -1461,3 +1461,12 @@ p {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+/* 追加 */
+/* Google Fontsのインポート */
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap");
+
+/* クラスを定義 */
+.fancy-font {
+  font-family: "Dancing Script", cursive;
+}
