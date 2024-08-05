@@ -503,7 +503,7 @@ p {
 @media screen and (max-width: 768px) {
   #fh5co-about .fh5co-bg {
     width: 100%;
-    min-height: 300px;
+    min-height: 500px;
   }
 }
 
