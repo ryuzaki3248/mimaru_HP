@@ -987,15 +987,15 @@ p {
 }
 #fh5co-events .fh5co-heading .heading:before,
 #fh5co-events .fh5co-heading .heading::before {
-  height: 64px;
-  width: 49px;
+  height: 100px;
+  width: 100px;
   position: absolute;
   content: "";
-  background: url(../images/0402-chef.png) no-repeat;
+  background: url(../images/map-101x101.jpg) no-repeat;
   top: 0;
   left: 50%;
-  margin-top: -50px;
-  margin-left: -24px;
+  margin-top: -70px;
+  margin-left: -45px;
 }
 #fh5co-events .fh5co-heading .sub-heading {
   color: #a99c92;
@@ -1469,4 +1469,173 @@ p {
 /* クラスを定義 */
 .fancy-font {
   font-family: "Dancing Script", cursive;
+}
+
+.map-iframe {
+  width: 100%;
+  height: auto;
+  min-height: 300px; /* 必要に応じて高さを調整 */
+}
+
+/* maps.html.erb css */
+
+.map-toppage {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  margin-left: 30px;
+  margin-right: 40px;
+}
+
+.map-title h1 {
+  font-weight: 300;
+  /* font-size: 60px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 200;
+  font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3",
+    "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+}
+
+.map-container {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 600px;
+  border: 0;
+}
+
+.black-border {
+  position: relative;
+  overflow: visible;
+  text-align: center;
+  color: black;
+  border-width: 3px 0 0 0;
+  border-style: double;
+  border-color: black;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.black-border::after {
+  position: absolute;
+  top: -0.85em;
+  left: 50%;
+  display: inline-block;
+  /* content: "◆"; */
+  background: #ffffff;
+}
+
+.map-wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+
+.box-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* 画面の高さいっぱいに広げる */
+}
+
+.box-text {
+  /* font-size: 40px; */
+  padding: 0.5em 1em;
+  margin: 2em 0;
+  font-weight: bold;
+  border: solid 5px black;
+  text-align: center; /* テキストを中央寄せ */
+  cursor: pointer;
+  width: fit-content; /* 追加 */
+  height: fit-content; /* 追加 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3",
+    "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+}
+
+.box-text p {
+  margin: 0;
+  padding: 0;
+}
+
+.blank-border {
+  width: 100%;
+  height: 100px;
+}
+
+.map-text {
+  /* font-size: 40px; */
+  font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3",
+    "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+}
+
+.map-lists {
+  font-size: 30px;
+}
+
+.box-text {
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.box-text:hover {
+  background-color: #d0d0d0; /* ホバー時の背景色 */
+}
+
+.top-link {
+  font-size: 30px; /* 適切なサイズに調整してください */
+  /* 他のスタイルプロパティを追加できます */
+}
+
+#fh5co-events,
+#fh5co-events .container,
+#fh5co-events .row,
+#fh5co-events .fh5co-heading,
+#fh5co-events .fh5co-heading h2,
+#fh5co-events .fh5co-heading p,
+#fh5co-events .fh5co-event,
+#fh5co-events .fh5co-event h3,
+#fh5co-events .fh5co-event p,
+#fh5co-events .fh5co-event span,
+#fh5co-events .fh5co-event a,
+#fh5co-events .map-toppage,
+#fh5co-events .map-title,
+#fh5co-events .map-wrapper,
+#fh5co-events .map-wrapper .box-text,
+#fh5co-events .map-wrapper .box-text p,
+#fh5co-events .map-text,
+#fh5co-events .map-lists,
+#fh5co-events .map-lists li,
+#fh5co-events .black-border {
+  color: #fff;
+  border-color: #fff;
+}
+
+#fh5co-events .map-wrapper .box-text {
+  background-color: rgba(255, 255, 255, 0.1); /* 背景を白の半透明に設定 */
+  cursor: pointer;
+}
+
+#fh5co-events .map-wrapper .box-text:hover {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.2
+  ); /* ホバー時の背景を白の半透明に設定 */
+}
+
+#fh5co-events hr.black-border {
+  border-top: 1px solid #fff;
 }
