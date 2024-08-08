@@ -961,7 +961,7 @@ p {
 }
 
 #fh5co-events {
-  padding: 7em 0;
+  padding-top: 7em;
   background-color: transparent;
   background-size: cover;
   background-attachment: fixed;
@@ -1002,7 +1002,7 @@ p {
 }
 @media screen and (max-width: 768px) {
   #fh5co-events {
-    padding: 5em 0;
+    /* padding: 5em 0; */
   }
 }
 #fh5co-events .fh5co-event {
@@ -1481,7 +1481,7 @@ p {
 
 .map-toppage {
   margin-top: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   margin-left: 30px;
   margin-right: 40px;
 }
@@ -1681,7 +1681,7 @@ p {
 }
 @media screen and (max-width: 768px) {
   #fh5co-events_2 {
-    padding: 5em 0;
+    padding-top: 3em;
   }
 }
 #fh5co-events_2 .fh5co-event {
