@@ -1641,7 +1641,7 @@ p {
 }
 
 #fh5co-events_2 {
-  padding: 7em 0;
+  /* padding: 7em 0; */
   background-color: transparent;
   background-size: cover;
   background-attachment: fixed;
@@ -1741,4 +1741,8 @@ p {
 }
 #fh5co-events_2 .fh5co-event .btn {
   margin-bottom: 0;
+}
+
+.reservation {
+  /* height: 600px; */
 }
