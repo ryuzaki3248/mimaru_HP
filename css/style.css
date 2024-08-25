@@ -13,7 +13,7 @@ body {
   font-family: "Merriweather", serif;
   font-size: 18px;
   font-weight: 300;
-  line-height: 2;
+  /* line-height: 2; */
   color: #5e493a;
 }
 body.fh5co-overflow {
@@ -627,7 +627,7 @@ p {
 #fh5co-featured .fh5co-grid .pricing {
   font-size: 40px;
   display: block;
-  padding-top: 20px;
+  /* padding-top: 20px; */
 }
 #fh5co-featured .fh5co-grid .pricing:after {
   content: "";
@@ -636,7 +636,7 @@ p {
   height: 2px;
   left: 50%;
   margin-left: -20px;
-  background: #fb6e14;
+  /* background: #fb6e14; */
 }
 #fh5co-featured .fh5co-grid .arrow-left:before,
 #fh5co-featured .fh5co-grid .arrow-left::before {
@@ -1744,4 +1744,12 @@ p {
 
 .reservation {
   /* height: 600px; */
+}
+
+.tax {
+  font-size: 15px;
+}
+
+.price {
+  font-size: 15px;
 }
